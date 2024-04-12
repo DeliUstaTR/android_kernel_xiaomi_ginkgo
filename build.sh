@@ -19,7 +19,7 @@ export KBUILD_BUILD_USER="ShawkTeam"
 export KBUILD_BUILD_HOST="Linux"
 export KBUILD_BUILD_VERSION="1"
 
-sudo apt-get -y install bc clang llvm lld 
+sudo apt-get -y install bc clang llvm lld python2
 
 if [[ $1 = "-r" || $1 = "--regen" ]]; then
 make O=out ARCH=arm64 $DEFCONFIG savedefconfig
